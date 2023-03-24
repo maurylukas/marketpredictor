@@ -1,0 +1,63 @@
+###
+### A complete description of a Prefect Deployment for flow 'Price pipeline'
+###
+name: price_pipeline
+description: null
+version: 89be8c6a05e4ba9433c35bf798da33f3
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule:
+  interval: 300.0
+  anchor_date: '2023-03-24T20:03:29.056402+00:00'
+  timezone: UTC
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: Price pipeline
+manifest_path: null
+storage: null
+path: C:\Users\anapa\PycharmProjects\marketpredictor
+entrypoint: main.py:price_pipeline
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    tickers:
+      title: tickers
+      position: 0
+      type: string
+    period:
+      title: period
+      position: 1
+      type: string
+    interval:
+      title: interval
+      position: 2
+      type: string
+    n_times:
+      title: n_times
+      position: 3
+      type: integer
+  required:
+  - tickers
+  - period
+  - interval
+  - n_times
+  definitions: null
+timestamp: '2023-03-24T20:03:29.076537+00:00'

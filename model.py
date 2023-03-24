@@ -22,6 +22,10 @@ def init_model():
 
 
 def benchmark_prediction(X, y):
+    """
+    Function to compute the mean absolute error of the constant prediction,
+    i.e. the fact that the prediction corresponds to the last seen value.
+    """
     err = []
     for xi, yi in zip(X, y):
         xi = [_ for _ in xi if _ != 0]
@@ -31,6 +35,10 @@ def benchmark_prediction(X, y):
 
 
 def train_model(X_train, X_test, y_train, y_test):
+    """
+    Function that continuously runs the model as long as its evaluation
+    doesn't reach more than 90% improvement over the benchmark.
+    """
     es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=20, restore_best_weights=True)
 
     while True:

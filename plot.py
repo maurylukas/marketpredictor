@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 
 
 def plot_loss(history):
+    """
+    Function to plot train and validation datasets' loss and MAE.
+    """
     plt.plot(history.history['loss'])
     plt.plot(history.history['val_loss'])
     plt.title('Model loss')

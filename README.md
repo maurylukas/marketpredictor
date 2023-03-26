@@ -1,5 +1,7 @@
-<h1 align="left">Market Predictor</h1>
-<h2 align="left">A fully customizable live Market Predictor deployed and monitored via Prefect tool for Python</h2>
+<h1 align="center">Market Predictor</h1>
+<p>&nbsp;</p>
+<h2 align="left">A fully customizable live market forecaster deployed and monitored via Prefect tool for Python</h2>
+<p>&nbsp;</p>
 
 |<h3 align="center">First we get market info from Yahoo Finance API</h3>|<h3 align="center">Then we normalize the chosen data</h3>| 
 |------------|-------------|

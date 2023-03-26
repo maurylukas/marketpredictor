@@ -3,18 +3,24 @@
 ###
 name: price_pipeline
 description: null
-version: 89be8c6a05e4ba9433c35bf798da33f3
+version: cfd572c8bd1dc10af9d53e2d506b3e47
 # The work queue that will handle this deployment's runs
 work_queue_name: default
-work_pool_name: null
+work_pool_name: default-agent-pool
 tags: []
 parameters: {}
 schedule:
   interval: 300.0
-  anchor_date: '2023-03-24T20:03:29.056402+00:00'
+  anchor_date: '2023-03-26T15:04:00.257584+00:00'
   timezone: UTC
-is_schedule_active: null
+is_schedule_active: false
 infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: Price pipeline
+manifest_path: null
 infrastructure:
   type: process
   env: {}
@@ -23,14 +29,11 @@ infrastructure:
   command: null
   stream_output: true
   working_dir: null
+  _block_document_id: 9a11f285-d61d-432c-984d-a0343253c05c
+  _block_document_name: anonymous-436aa376-437f-4fa3-a85e-500254a31448
+  _is_anonymous: true
   block_type_slug: process
   _block_type_slug: process
-
-###
-### DO NOT EDIT BELOW THIS LINE
-###
-flow_name: Price pipeline
-manifest_path: null
 storage: null
 path: C:\Users\anapa\PycharmProjects\marketpredictor
 entrypoint: main.py:price_pipeline
@@ -60,4 +63,4 @@ parameter_openapi_schema:
   - interval
   - n_times
   definitions: null
-timestamp: '2023-03-24T20:03:29.076537+00:00'
+timestamp: '2023-03-26T15:04:00.257584+00:00'
